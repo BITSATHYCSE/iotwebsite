@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/gotham-thind41d.html?') format('eot'), 
+        url('../fonts/gotham-thin.otf')  format('opentype'),
+        url('../fonts/gotham-thin.woff') format('woff'), 
+        url('../fonts/gotham-thin.ttf')  format('truetype'),
+        url('../fonts/gotham-thin.html#gotham-thin') format('svg');
+    
+    font-style: normal;
+}
+
+body {
+    font-family: 'Georgia,serif';	
+    text-align: center;
+    background-image: url('../images/img_1.jpg') ;
+    background-repeat:	no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.wrapper {
+    background: none;
+    margin:0 auto ;
+    width:100% ;
+    float:left ;
+    padding-bottom: 60px;
+}
+
+.bg-top{	
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+a{
+    outline: none;
+}
+img{	
+    height: auto;
+    max-width: 100%;
+}
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.logo{
+    padding: 15px 0;
+}
+.content{
+    padding: 10px 0  5px;
+}
+.text_heading{
+    font-family: 'gotham';
+    font-weight: 100;
+    font-size: 60px;
+    color: #fff;
+	line-height:35px;
+    margin-bottom: 60px;
+}
+
+.text_heading span{font-size:14px; }
+
+.shop-name {
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'gotham';
+    text-transform: uppercase;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+	padding:10px 0;
+	background:rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+a:hover .shop-name {
+    background:rgba(0, 0, 0, 0.9);
+}
+a .shop-name,
+a:hover .shop-name {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.image-bg{
+    background-image: url('../images/bg-macbook.png'); width: 560px;height:340px;display:inline-block;position: relative;
+}
+
+.image-bg-big{
+    background-image: url('../images/bg-macbook-big.png'); width: 1020px;height:593px;display:inline-block;position: relative;
+}
+
+
+.icon-new {
+    background-color: #d6644a;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #ffffff;
+    font-size: 200%;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+    top:-35px;
+    z-index:9 ;
+    font-family: 'gotham';
+}
+
+.image-bg .image-shop-scroll{
+    background-position: center 0;
+    background-repeat: no-repeat;
+    position:absolute;width:405px;height:255px;top:32px;left:79px;
+}
+.image-bg .glare{
+    /*background: url('../images/glare.png') center 0 no-repeat;position:absolute;width:250px;height:300px;top:10px;right:59px;*/
+}
+.image-bg .image-shop-scroll{
+    transition: all 7s ease-out 0s;
+    -webkit-transition: all 7s ease-out 0s;
+    -moz-transition: all 7s ease-out 0s;
+    -ms-transition: all 7s ease-out 0s;
+    -o-transition: all 7s ease-out 0s;
+}
+.image-bg:hover .image-shop-scroll{
+    background-position: center 100%!important;
+}
+
+.image-bg-big .image-shop-scroll{
+    background-position: center 0;
+    background-repeat: no-repeat;
+    position:absolute;width:780px;height:500px;top:32px;left:129px;
+}
+.image-bg-big .glare{
+    /*background: url('../images/glare.png') center 0 no-repeat;position:absolute;width:250px;height:300px;top:10px;right:59px;*/
+}
+.image-bg-big .image-shop-scroll{
+    transition: all 5s ease-out 0s;
+    -webkit-transition: all 5s ease-out 0s;
+    -moz-transition: all 5s ease-out 0s;
+    -ms-transition: all 5s ease-out 0s;
+    -o-transition: all 5s ease-out 0s;
+}
+.image-bg-big:hover .image-shop-scroll{
+    background-position: center 100%!important;
+}
+
+
+
+.link:hover .shop-name{
+    color: #f4f4f4!important;
+}
+
+/*$media (max-width: 480px) */
+@media (max-width: 480px) {
+    .text_heading { font-size: 40px;}
+    .image-bg {
+        background-size: 320px 220px;
+        height: 220px;
+        margin-left: -20px;
+        width: 320px;
+    }
+
+    .image-bg .image-shop-scroll {
+        background-position: center 0;
+        background-repeat: no-repeat;
+        height: 159px;
+        left: 54px;
+        position: absolute;
+        top: 26px;
+        width: 215px;
+    }
+    .glare { display: none;}
+
+}
+
