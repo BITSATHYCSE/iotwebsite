@@ -239,7 +239,7 @@ var theme = function () {
         initCountDown: function () {
             var austDay = new Date();
           //  austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
-            austDay = new Date("August 17, 2017 10:00:00");
+            austDay = new Date("August 18, 2017 10:00:00");
 			$('#defaultCountdown').countdown({until: austDay});
             $('#year').text(austDay.getFullYear());
         },
